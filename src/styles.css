@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+.desktop-nav, .mobile-nav {
+    font-family: "Poppins", sans-serif;
+}
+.nav, .toggle-bar {
+    color: #242323;
+}
+.hero-section {
+    background-color: #F4F6F5;
+}
+.sales-ad {
+    background-color: #E0C340;
+}
+.sale-paragraph {
+    color: #231300;
+}
+.explore {
+    color: #7f7f7f;
+}
+.circle {
+    border: 1px solid #EFECEB;
+}
+.app-paragraph {
+    color: #7c7c7c;
+}
+.gray {
+    background-color: #89807A;
+}
+.yellow {
+    background-color: #EBD96B;
+}
+.community {
+    background-color: #E5C643;
+}
+.community-paragraph {
+    color: #FFFCF8;
+}
+.footer-right a, .footer-paragraph {
+    font-family: "Roboto", sans-serif;
+    color: #8E8E8E;
+}
+.footer-right a {
+    font-size: 13px;
+}
+.link-title {
+    color: #D9D9D9;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="fixed z-30 bg-white/50 w-full">
+                <!-- desktop-nav -->
+            <div class="justify-between items-center hidden lg:flex desktop-nav px-16 py-7">
+                <a href="#" class="">
+                    <img src="assets/Frame 50.png" alt="store-logo"/>
+                </a>
+                    <ul class="flex items-center justify-center gap-12 font-medium">
+                    <li class=""><a href="#brands" class="hover:text-amber-800 transition-all duration-500">BRANDS</a></li>
+                    <li class=""><a href="#products" class="hover:text-amber-800 transition-all duration-500">PRODUCTS</a></li>
+                    <li><a href="#sales" class="hover:text-amber-800 transition-all duration-500">SALES</a></li>
+                    <li><a href="#favourite" class="hover:text-amber-800 transition-all duration-500">FAVOURITE</a></li>
+                    <li><a href="#join" class="bg-black text-white py-3 px-5 rounded-md hover:text-amber-200 transition-all duration-500">SIGN UP</a></li>
+                    </ul>
+            </div>
+            <!-- mobile nav -->
+            <div class=" lg:hidden flex items-center justify-between relative mobile-nav px-9 py-7">
+                <a href="#" class="">
+                    <img src="assets/Frame 50.png" alt="store-logo"/>
+                </a>
+                 <!-- Checkbox Trick -->
+                  <div class="">
+                    <input type="checkbox" id="menu-toggle" class="hidden peer">
+                 <label for="menu-toggle" class="lg:hidden toggle-bar cursor-pointer text-3xl font-bold">☰</label>
+     
+                 <ul class="absolute pl-10 pt-12 opacity-0 transition-all duration-500 ease-in-out top-[92px] left-0 bg-amber-200 z-50 w-1/2 h-96 scale-95 peer-checked:opacity-100 peer-checked:scale-100 font-medium">
+                    <li class=""><a href="#brands">BRANDS</a></li>
+                    <li class="mt-5"><a href="#products">PRODUCTS</a></li>
+                    <li class="mt-5"><a href="#sales">SALES</a></li>
+                    <li class="mt-5"><a href="#favourite">FAVOURITE</a></li>
+                    <li class="mt-12"><a href="#join" class="bg-black text-white py-3 px-5 rounded-md">SIGN UP</a></li>  
+                 </ul>
+                  </div>
+                 
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5 font-[Poppins] md:pt-28 pt-16">
+        <!-- hero-section -->
+         <section id="hero" class="hero-section md:mx-16 md:rounded-3xl flex flex-col gap-12 lg:flex-row justify-around font-[Poppins] pt-16 px-6 pb-10 md:pb-0">
+            <!-- for the hero-text -->
+            <div class="pl-0 md:pl-16 lg:pl-0">
+                <div class="relative">
+                    <img src="/assets/Rectangle 3 (1).png" alt="white-hero-background" class="lg:w-[270px] lg:h-[80px] w-[240px] h-[72px]"/>
+                    <span class="md:text-[60px] text-[45px] font-black uppercase absolute pl-5 top-0 ">Let's</span>
+                </div>
+                <span class="md:text-[60px] text-[45px] font-black uppercase pl-5 md:pl-[56px] lg:pl-5">Explore</span>
+                <div class="relative">
+                    <img src="/assets/Rectangle 6 (1).png" alt="yellow-hero-background" class="lg:w-[295px] lg:h-[80px] md:h-[80px] md:w-[295px] w-[240px] h-[72px]"/>
+                    <span class="md:text-[60px] text-[45px] font-black uppercase absolute pl-5 top-0 text-amber-800">unique</span>
+                </div>
+                <span class="md:text-[60px] text-[45px] font-black uppercase pl-5 md:pl-[150px] lg:pl-5">clothes.</span>
+                <p class="md:pl-0 lg:pl-5 md:text-xl lg:text-sm font-normal mt-4 text-sm text-center md:text-center lg:text-left">Live for Influential and Innovative Fashion!</p>
+                <div class="flex items-center md:justify-center justify-start lg:justify-start gap-5 mt-9">
+                    <img src="/assets/Vector 9.png" alt="hero-art" width="150px" class="md:hidden inline-block lg:inline-block"/>
+                    <a href="#" class="bg-black text-white py-3 px-5 rounded-md hover:text-amber-200 transition-all duration-300">Shop Now</a>
+                </div>
+            </div>
+            <!-- for hero-image -->
+             <div class="relative lg:mt-16 md:mt-0">
+                <img src="assets/hero-image.png" alt="hero-image" class=" w-[570px] object-cover relative left-1/2 -translate-x-1/2"/>
+                <span class="absolute top-[-20px] left-0"><img src="assets/Star 15.png" alt="star"/></span>
+                <span class="absolute top-5 right-20"><img src="assets/Star 15.png" alt="star"/></span>
+                <span class="absolute lg:bottom-20 bottom-5 left-0"><img src="assets/Star 15.png" alt="star"/></span>
+                <span class="absolute lg:bottom-32 bottom-10 right-[-12px]"><img src="assets/Star 15.png" alt="star"/></span>
+             </div>
+         </section>
+         <!-- brand-section -->
+          <section id="brands" class="bg-amber-200 flex items-center justify-between md:px-12 py-8 md:mt-20 px-5">
+            <img src="assets/h&m.png" alt="H&M-brand" class="mix-blend-multiply lg:w-[120px] md:w-[50px] w-[48px]"/>
+            <img src="assets/obey.png" alt="Obey-brand" class="mix-blend-multiply lg:w-[120px] md:w-[50px] w-[48px]"/>
+            <img src="assets/shopify.png" alt="Shopify-brand" class="mix-blend-multiply lg:w-[140px] md:w-[72px] w-[65px]"/>
+            <img src="assets/lacoste.png" alt="Lacoste-brand" class="mix-blend-multiply lg:w-[140px] md:w-[72px] w-[65px]"/>
+            <img src="assets/levi's.png" alt="Levi's-brand" class="mix-blend-multiply lg:w-[120px] md:w-[50px] w-[48px]"/>
+            <img src="assets/amazon.png" alt="Amazon-brand" class="mix-blend-multiply lg:w-[120px] md:w-[50px] w-[48px]"/>
+          </section>
+          <!-- product section -->
+           <section id="products" class="py-16">
+            <div class="relative w-[200px] md:ml-14 ml-7">
+                <h1 class="uppercase font-black md:text-2xl text-xl relative z-10">our products</h1>
+                <img src="assets/Vector 8.png" alt="product-art" class="w-24 absolute md:right-2 md:top-[12px] right-7 top-[10px]"/>
+            </div>
+           
+            <div class="flex flex-wrap items-center justify-center gap-12 mt-16">
+                <!--first product-container -->
+                <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                    <!-- first product-image -->
+                    <img src="assets/hoodies.png" alt="hoodies"  class="w-5/6 h-64 object-cover rounded-md"/>
+                    <div class="mt-7 pl-7">
+                        <!-- first product name -->
+                        <h4 class="font-medium text-xl">Hoodies</h4>
+                        <!-- first prouct description -->
+                        <p class="text-sm text-gray-600 mt-5">Stay cozy and stylish with our premium hoodies—crafted for comfort, built for everyday wear.</p>
+                        <!-- price-container -->
+                        <div class="mt-6">
+                            <del class="text-sm text-gray-400">$200</del>
+                            <span class="text-[17px]">$190.99</span>
+                        </div>
+                        <!-- shop-now button -->
+                        <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                    </div>
+                   
+                </div>
+                   <!-- second product -->
+                    <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                        <img src="assets/coats&parkas.png" alt="Coats-and-Parkas" class="w-5/6 h-64 object-cover rounded-md"/>
+                        <div class="mt-7 pl-7">
+                            <h4 class="font-medium text-xl">Coats & Parkas</h4>
+                            <p class="text-sm text-gray-600 mt-5">Brave the cold in style with our premium coats and parkas—warm, for effortless elegance in any weather.</p>
+                            <div class="mt-6">
+                                <del class="text-sm text-gray-400">$350</del>
+                                <span class="text-[17px]">$300.99</span>
+                            </div>
+                            
+                            <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                        </div>
+                       
+                    </div>
+                    <!-- third product -->
+                    <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                        <img src="assets/tees&t-shirts.png" alt="Tees-and-T-shirts" class="w-5/6 h-64 object-cover rounded-md"/>
+                        <div class="mt-7 pl-7">
+                            <h4 class="font-medium text-xl">Tees & T-shirts</h4>
+                            <p class="text-sm text-gray-600 mt-5">Soft, stylish, and effortlessly cool—our tees and T-shirts are designed for comfort and versatility.</p>
+                            <div class="mt-6">
+                                <del class="text-sm text-gray-400">$100</del>
+                                <span class="text-[17px]">$90.99</span>
+                            </div>
+                            
+                            <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                        </div>
+                       
+                    </div>
+                    <!-- fourth product -->
+                    <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                        <img src="assets/denim.jpg" alt="Denim" class="w-5/6 h-64 object-cover rounded-md"/>
+                        <div class="mt-7 pl-7">
+                            <h4 class="font-medium text-xl">Denim Trousers</h4>
+                            <p class="text-sm text-gray-600 mt-5">Timeless and effortlessly cool—our denim trousers are built for comfort and durability.</p>
+                            <div class="mt-6">
+                                <del class="text-sm text-gray-400">$300</del>
+                                <span class="text-[17px]">$290.99</span>
+                            </div>
+                            
+                            <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                        </div>
+                       
+                    </div>
+                    <!-- fifth product -->
+                    <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                        <img src="assets/sweatshirts.jpg" alt="Sweatshirts" class="w-5/6 h-64 object-cover rounded-md"/>
+                        <div class="mt-7 pl-7">
+                            <h4 class="font-medium text-xl">Sweatshirts</h4>
+                            <p class="text-sm text-gray-600 mt-5">Cozy and effortlessly stylish—our sweatshirts are designed for warmth and comfort.</p>
+                            <div class="mt-6">
+                                <del class="text-sm text-gray-400">$400</del>
+                                <span class="text-[17px]">$390.99</span>
+                            </div>
+                            
+                            <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                        </div>
+                       
+                    </div>
+                    <!-- sixth product -->
+                    <div class="w-[350px] h-[600px] bg-gray-50 flex flex-col items-center pt-10 shadow-lg group hover:shadow-xl hover:scale-105 transition duration-400">
+                        <img src="assets/facecap.jpg" alt="Face cap" class="w-5/6 h-64 object-cover rounded-md"/>
+                        <div class="mt-7 pl-7">
+                            <h4 class="font-medium text-xl">Face caps</h4>
+                            <p class="text-sm text-gray-600 mt-5">Top off your look with our stylish face caps—lightweight, and comfortable.</p>
+                            <div class="mt-6">
+                                <del class="text-sm text-gray-400">$100</del>
+                                <span class="text-[17px]">$90.99</span>
+                            </div>
+                            
+                            <a href="#" class=" text-black text-sm py-3 px-5 rounded-md block w-1/2 mx-auto mt-9 bg-amber-200 text-center font-semibold transition duration-500 ease-in-out group-hover:bg-black group-hover:text-white group-hover:border-2 group-hover:border-amber-200">Shop Now</a>
+                        </div>
+                       
+                    </div>
+            </div>
+
+           
+           </section>
+           <!-- Sales Ad section -->
+            <section id="sales" class="sales-ad flex flex-col-reverse lg:flex-row xl:gap-16 lg:h-[550px] pt-10">
+                <!-- sales-Ad-image-container -->
+                <div class="h-full relative md:ml-16 ">
+                    <img src="assets/image_12-removebg-preview.png" alt="sales-ad-image" class="h-full relative"/>
+                    <img src='assets/Star 8.png' alt='sales-star' class="absolute top-[80px] left-[50px]" width="30"/>
+                    <img src='assets/Star 8.png' alt='sales-star' class="absolute top-[40px] right-[80px] lg:right-[80px] md:right-[180px]" width="30"/>
+                    <img src='assets/Star 8.png' alt='sales-star' class="absolute bottom-[150px] md:bottom-[200px] left-[90px]" width="30"/>
+                    <img src='assets/Star 8.png' alt='sales-star' class="absolute bottom-[110px] right-[60px] lg:right-[60px] md:right-[200px]" width="30"/>
+                </div>
+                <!-- sales-Ad-text-container -->
+                <div class="mt-10 pl-7 lg:pl-0 md:flex md:flex-col md:items-center lg:items-start">
+                    <div class="relative">
+                        <img src="assets/Rectangle 3 (1).png" alt="white-sales-background" class="w-[300px] h-[80px] md:h-[90px] md:w-[340px] lg:h-[80px] lg:w-[300px]"/>
+                        <span class="text-[45px] lg:text-[60px] md:text-[70px] font-black uppercase absolute top-0 pl-3">payday</span>
+                    </div>
+                    <span class="text-[45px] lg:text-[60px] md:text-[70px] font-black uppercase pl-3">sales now</span>
+                    <div class="sales-paragraph mt-6 flex flex-col font-medium pl-3 text-[16px] md:text-lg lg:text-[16px]">
+                        <span>Spend minimal $100 get 30% off</span>
+                        <span>voucher code for your next purchase</span>
+                    </div>
+                    <div class="mt-6 flex flex-col pl-3 text-[16px] md:text-lg lg:text-[16px]">
+                        <span class="font-bold">1 June - 10 June 2021</span>
+                        <span class="font-normal">*Terms & Conditions Apply</span>
+                    </div>
+                    <a href="#" class=" text-white text-sm py-3 uppercase rounded-md block w-[45%] ml-3 mt-9 bg-black text-center font-semibold transition duration-500 ease-in-out hover:text-amber-200 hover:scale-105">Shop Now</a>
+                </div>
+            </section>
+            <!-- more advertisement section for young fashion -->
+             <section id="favourite" class="py-24 md:px-16">
+                <div class="relative w-[250px] md:w-[300px] ml-7 md:ml-0">
+                    <h1 class="uppercase font-black md:text-2xl text-xl relative z-10">young's favourite</h1>
+                    <img src="assets/Vector 8.png" alt="product-art" class="w-24 absolute md:top-[12px] right-7 top-[10px]"/>
+                </div>
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-12 mt-16 px-5 md:px-0">
+                    <!-- first image container -->
+                    <div>
+                        <img src="assets/youngfav1.png" alt="young-favourite1"/>
+                        <div class="flex justify-between mt-3">
+                            <p class="flex flex-col">
+                                <span class="font-medium">Trending on instagram</span>
+                                <a href="#" class="explore text-[12px] hover:scale-105 transition duration-300">Explore Now!</a>
+                            </p>
+                            <img src="assets/Arrow 4.svg" alt="arrow-right1" class="w-7"/>
+                        </div>
+                    </div>
+                    <!-- second image container -->
+                    <div>
+                        <img src="assets/youngfav2.png" alt="young-favourite2"/>
+                        <div class="flex justify-between mt-3">
+                            <p class="flex flex-col">
+                                <span class="font-medium">All under $40</span>
+                                <a href="#" class="explore text-[12px] hover:scale-105 transition duration-300 hover:text-gray-700">Explore Now!</a>
+                            </p>
+                            <img src="assets/Arrow 4.svg" alt="arrow-right2" class="w-7"/>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <!-- section for store mobile application -->
+              <section class="flex flex-col lg:flex-row items-center justify-center lg:gap-44 gap-32 pt-16 pb-24 lg:pt-24">
+                <!-- text -->
+                 <div>
+                    <div class="flex flex-col gap-[1.5px] font-black text-2xl uppercase">
+                        <span>download app &</span>
+                        <span>get the voucher!</span>
+                    </div>
+                    <div class="flex flex-col gap-[1.5px] text-[12px] app-paragraph mt-7">
+                        <span>Get 30% off for first transaction using</span>
+                        <span>Rondonvision mobile app for now.</span>
+                    </div>
+                    <div class="flex items-center gap-4 mt-7">
+                        <a href="#"><img src='assets/appStore.png' alt="App-Store" width="120"/></a>
+                        <a href="#"><img src='assets/googlePlay.png' alt="Google-Play" width="120"/></a>
+                       
+                    </div>
+                 </div>
+                 <!-- image -->
+                  <div class="relative">
+                    <!-- for the background ellipses -->
+                     <div class="md:w-[370px] md:h-[370px] w-[340px] h-[340px] rounded-full flex items-center justify-center circle">
+                        <div class="md:w-[320px] md:h-[320px] w-[290px] h-[290px] rounded-full flex items-center justify-center circle">
+                            <div class="md:w-[270px] md:h-[270px] w-[240px] h-[240px] rounded-full circle">
+                            </div>
+                        </div>
+                     </div>
+                     <!-- the phone image -->
+                      <img src="assets/Mobile app.png" alt="mobile-app-image" width="300" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+                      <div class="w-3 h-3 gray rounded-full absolute top-5"></div>
+                      <div class="w-2 h-2 gray rounded-full absolute bottom-9 right-0"></div>
+                      <div class="w-4 h-4 yellow rounded-full absolute -bottom-7"></div>
+                      <div class="w-5 h-5 yellow rounded-full absolute top-3 right-0"></div>
+                  </div>
+              </section>
+              <!-- section for shopping community -->
+               <section id="join" class="community flex flex-col md:items-center md:justify-center gap-4 py-24">
+                    <div class="md:text-[35px] text-[20px] font-black text-white uppercase flex flex-col items-center">
+                        <span>join shopping community to</span>
+                        <span>get monthly promo</span>
+                    </div>
+                    <p class="font-normal community-paragraph text-sm md:text-[18px] text-center">Type your email down below to join our online community</p>
+                    <div class="relative md:w-[30%] mx-10 md:mx-0">
+                        <input type="email" name="email" placeholder="Add your email here" class="bg-white placeholder:text-[12px] py-3 rounded-sm w-full pl-3 outline-0 text-[12px]"/>
+                        <button class="absolute right-1 top-1/2 -translate-y-1/2 bg-black py-2 px-4 text-sm text-white uppercase rounded-sm cursor-pointer tracking-widest" type="button">send</button>
+                    </div>
+               </section>
+    </main>
+    <!-- the footer section -->
+    <footer class="flex flex-col md:flex-row justify-between md:px-14 bg-black py-20 pl-7">
+        <!-- left -->
+        <div>
+            <h4 class="uppercase text-white font-black text-lg">fashion</h4>
+            <p class="footer-paragraph flex flex-col text-sm mt-5">
+                <span>Complete your style with awesome</span>
+                <span>clothes from us.</span>
+            </p>
+            <div class="footer-socials flex items-center gap-3 mt-5">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook bg-amber-200 p-2 rounded-lg"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter bg-amber-200 p-2 rounded-lg"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram bg-amber-200 p-2 rounded-lg"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-linkedin bg-amber-200 p-2 rounded-lg"></i></a>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="footer-right flex flex-col md:flex-row justify-center md:gap-20 gap-7 mt-7 md:mt-0">
+            <!-- company -->
+            <div>
+                <ul class="leading-loose">
+                    <li class="link-title">Company</li>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <!-- quick link -->
+            <div>
+                <ul class="leading-loose">
+                    <li class="link-title">Quick Link</li>
+                    <li><a href="#">Share Location</a></li>
+                    <li><a href="#">Orders Tracking</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <!-- legal -->
+            <div>
+                <ul class="leading-loose">
+                    <li class="link-title">Legal</li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
